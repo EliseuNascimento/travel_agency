@@ -7,10 +7,10 @@
 .container{
 	max-height: 150px;
 }
-.right{
+.direita{
 	text-align: right;
 }
-.center{
+.centro{
 	text-align: center;
 }
 .nav-item{
@@ -18,9 +18,9 @@
 	padding-left: 5%;
 }
 #logo{
-	max-width: 100%;
+	max-width: 10%;
 }
-.text{
+.texto{
 	text-align: justify;
 	font-size: 14pt;
 }
@@ -37,28 +37,32 @@ ul{
 	list-style: none;
 	display: inline-block;
 }
-#center{
+#centro{
 	text-align: center;
 }
 @media screen and (max-width: 425px){
 	*{
 		margin-bottom: 3%;
-}
+	}
 	.no-responsive{
 		display: none;
-}
+	}
 	#resposive{
 		display: block;
 		width: 50%;
-}
+	}
 	#toggle-img{
 		width: 100%;
-}
+	}
 	#btn-toggle{
 		width: 50px;
 		margin-left: 55%;
-}
-	.center{
+	}
+	#logo{
+		max-width: 100%;
+		margin-left: 55%;
+	}
+	.centro{
 		text-align: center;
 	}
 	.alinhamento{
