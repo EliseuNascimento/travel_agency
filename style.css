@@ -1,0 +1,74 @@
+#resposive{
+	display: none;
+}
+.menu{
+	margin: top: 2%;
+}
+.container{
+	max-height: 150px;
+}
+.right{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+.nav-item{
+	font-size: 20pt;
+	padding-left: 5%;
+}
+#logo{
+	max-width: 100%;
+}
+.text{
+	text-align: justify;
+	font-size: 14pt;
+}
+#aviao{
+	min-width: 90%;
+	max-width: 100%;
+	padding-top: 4%;
+}
+h2, h4{
+	font-weight: bold;
+}
+ul{
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+}
+#center{
+	text-align: center;
+}
+@media screen and (max-width: 425px){
+	*{
+		margin-bottom: 3%;
+}
+	.no-responsive{
+		display: none;
+}
+	#resposive{
+		display: block;
+		width: 50%;
+}
+	#toggle-img{
+		width: 100%;
+}
+	#btn-toggle{
+		width: 50px;
+		margin-left: 55%;
+}
+	.center{
+		text-align: center;
+	}
+	.alinhamento{
+		font-size: 12pt;
+		text-align: center;
+		margin: 1em auto;
+	}
+	#navbasSupportedContent{
+		padding-top: 15%;
+		width: 100%;
+		margin-left: 50%;
+	}
+}
