@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box; 
+}
+body{
+	font-family: Arial;
+}/*Defining nav size
+*/
+nav{
+	background: #0082e6;
+	height: 80px;
+	width: 100%;
+}
+/*working the logo image*/
+img.logo{
+	line-height: 80px;
+	padding: 0 100px;
+	height: 80px;
+	min-height: 80px;
+}
+/*adjusting menu items
+*/
+nav ul{
+	float: right;
+	margin-left: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+/*formatting hyperlinks*/
+a.active, a:hover{
+	background: #1b9bff;
+	transition: .5s;
+}
+/*creating the toggle button
+*/
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+/*adjusting layout for medium devices*/
+@media (max-width: 925px){
+	img.logo{
+		height: 80px;
+		min-height: 80px;
+		padding-left: 50px;
+	}
+	/* menu*/
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+/*show button toggle*/
+@media (max-width: 768px){
+	.checkbtn{
+		display: block;
+	}
+	/*adjusting the menu*/
+	ul{
+		position: fixed;
+		width: 90%;
+		/*height: 100vh*/
+		height: auto;
+		background: #2c3e50;
+		top: 80px;
+		left: -110%;
+		text-align: center;
+		transition: all.5s;
+		z-index: 2;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 10px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a.active, a:hover{
+		color: #0082e6;
+		background: none;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+/*adjusting for small devices*/
+@media (max-width: 375px){
+	img.logo{
+		height: 70px;
+		min-height: 70px;
+		padding-top: 10px;
+		padding-left: 30px;
+	}
+}
+#aviao{
+	min-width: 90%;
+	max-width: 100%;
+	padding-top: 4%;
+}
+#logo{
+	min-width: 90%;
+	max-width: 100%;
+}
