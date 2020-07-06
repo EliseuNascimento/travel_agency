@@ -113,12 +113,78 @@ a.active, a:hover{
 		padding-left: 30px;
 	}
 }
-#aviao{
-	min-width: 90%;
-	max-width: 100%;
-	padding-top: 4%;
-}
 #logo{
 	min-width: 90%;
 	max-width: 100%;
+}
+#aviao_div{
+	
+}
+#aviao{
+	float: left;
+	min-width: 50%;
+	max-width: 90%;
+	padding-top: 1%;
+	overflow: hidden;
+	position: fixed;
+	position: absolute;
+	opacity: 0;
+	animation-name: anime;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	margin-bottom: 5px;
+}
+.col-sm-7{
+	float: right;
+}
+@keyframes anime{
+	25%{
+		opacity: 1;
+		transform: scale(1.1,1.1);
+	}
+	50%{
+		opacity: 0;
+	}
+}
+#aviao:nth-child(1){
+
+}
+#aviao:nth-child(2){
+	animation-delay: 5s;
+}
+#btnpac{
+	float: center;
+}
+#btnctt{
+	float: right;
+	}
+textarea{
+	resize: none;
+}
+.fa{
+	padding: 10px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+.fa:hover{
+	opacity: 0.5;
+}
+.fa-facebook{
+	background: #3b5998;
+	color: white; 
+}
+.fa-instagram{
+	background: #125688;
+	color: white;
+}
+.fa-twitter{
+	background: #55acee;
+	color: white;
+}
+.fa-youtube{
+	background: #bb0000;
+	color: white;
 }
