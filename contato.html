@@ -12,6 +12,8 @@
 <!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!--Fonts - Social Medias -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Site novo - Agência de turismo</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
 		<label for="check" class="checkbtn">
 			<i class="fas fa-bars"></i>
 		</label>
-		<label><img class="logo" src="img/Turismo.png"></label>
+		<label><img class="logo" src="img/turismo.png"></label>
 		<ul>
 			<li><a href="index.html" class="active">Home</a></li>
 			<li><a href="agencia.html">Quem somos		</a></li>
@@ -31,11 +33,59 @@
 	</nav>
 <!-- Container -->
 	<div class="container-fluid">
-		<br>
 		<div class="carousel">
-		
+			
 		</div>
-		<br>
+		<div class="row">
+			<div class="col-sm-12">
+				<fieldset><legend>Formulário de Contato</legend></fieldset>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<form>
+						<label>Nome:</label><br>
+						<input type="tex" name="nome1" class="form-control" placeholder="ex. Seu nome" required>
+						<br>
+						<label>Email:</label>
+						<br>
+						<input type="text" name="email" class="form-control" placeholder="ex. contato123@gmail.com" required>
+						<br>
+						<label>Número de telefone:</label>
+						<br>
+						<input type="tel" name="telefone" class="form-control" maxlength="18" placeholder="ex. +55 11 9 4334-5577" required>
+						<br>
+					</form>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<form>
+						<label>Qual seu motivo do seu contato?</label>
+						<br>
+						<select class="form-control">
+							<option value="1">Duvida</option>
+							<option value="2">Sugestão</option>
+							<option value="3">Algum problema</option>
+						</select>
+						<label>Sua menssagem</label>
+							<br>
+							<textarea maxlength="250" rows="5" cols="68" placeholder="Escreva algo" required></textarea>
+							<input id="btnctt" type="submit" name="enviar" value="Enviar"
+							class="btn btn-primary">
+					</form>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<label>Redes Sociais</label>
+				<br>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-youtube"></a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
